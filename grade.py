@@ -12,11 +12,10 @@ def to_grade(score):
 
 
 def average(scores):
-    return sum(scores) / len(scores)
+    return round(sum(scores) / len(scores), 2)
 
 
 if __name__ == "__main__":
     scores = [85, 72, 64, 91]
     print("Average:", average(scores))
     print("Grade:", to_grade(average(scores)))
-    
